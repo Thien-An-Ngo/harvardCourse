@@ -1,4 +1,6 @@
 # havardCourse
+## Install omyzsh
+https://medium.com/@marcosantonocito/install-zsh-and-oh-my-zsh-on-osx-10-11-el-capitan-cfaa0ebb97dc
 
 ## Git
 
