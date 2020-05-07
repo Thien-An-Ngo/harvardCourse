@@ -1,0 +1,9 @@
+category,item
+
+Host,ec2-18-210-51-239.compute-1.amazonaws.com
+Database,d2t4ek219q5l6v
+User,hoxhmsgvomwfov
+Port,5432
+Password,274ae0d3c75a6eb5dc4afe74e3551e6285ad7c25a56077941f254bd79b038275
+URI,postgres://hoxhmsgvomwfov:274ae0d3c75a6eb5dc4afe74e3551e6285ad7c25a56077941f254bd79b038275@ec2-18-210-51-239.compute-1.amazonaws.com:5432/d2t4ek219q5l6v
+Heroku CLI,heroku pg:psql postgresql-regular-18403 --app mytestsql

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap-4.0.0/css/bootstrap.min.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap-4.0.0/css/bootstrap.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+  <title>{% block title %}{% endblock %}</title>
+</head>
+
+<body>
+  <div class="m-3 mt-4 p-2 ml-4">
+
+    <h1 class="h1 mb-4">
+      {% block heading %}{% endblock%}
+    </h1>
+
+    {% block body %}{% endblock %}
+
+  </div>
+
+</body>
+
+</html>
