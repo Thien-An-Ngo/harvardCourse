@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    BookingAFlight
+{% endblock %}
+
+{% block body %}
+    <h1 class="mb-5">Book A Flight</h1>
+    <div class="mt-4 mb-3 d-flex column">
+        {% if error %}
+            <h2 class="color-alert">{{ error }}</h2>
+        {% endif %}
+        <form action="{{ url_for('booker') }}" method="POST">
+            <select name="flightId" id="flights">
+                <option value="0">Please select a flight</option>
+                {% for flight in flights%}
+                    <option value="{{ flight.id }}">{{flight.origin}} to {{flight.destination}} ({{flight.duration}} minutes)</option>
+                {% endfor %}
+            </select>
+            <input type="text" name="surname" placeholder="Please type in you surname" required>
+            <input type="text" name="name" placeholder="Please type in you name" required>
+            <input type="email" name="email" placeholder="Please type in you email" required>
+            <button>Submit</button>
+        </form>
+    </div>
+{% endblock %}

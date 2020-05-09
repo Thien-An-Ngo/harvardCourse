@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    log in
+{% endblock %}
+
+{% block body %}
+    <h1 class="mb-5">Log In</h1>
+    <div class="mt-5 mb-5">
+        <form action="{{ url_for('addFlight')}}">
+            <input type="text" name="employee_id" placeholder="registered name">
+            <input type="password" name="password" placeholder="password">
+            <button class="btn btn-success">Log In</button>
+        </form>
+    </div>
+{% endblock %}

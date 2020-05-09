@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    AddFlight
+{% endblock %}
+
+{% block body %}
+    <form action="{{ url_for('addFlight') }}" method="POST">
+        <div class="d-flex column">
+            <input type="text" name="o" placeholder="origin of new flight">
+            <input type="text" name="dest" placeholder="destination of new flight">
+            <input type="text" name="dur" placeholder="duration of new flight">
+            <button>Submit</button>
+        </div>
+    </form>
+{% endblock %}
