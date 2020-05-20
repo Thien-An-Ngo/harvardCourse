@@ -27,7 +27,7 @@ def register():
         password0 = request.form.get("password")
         password1 = request.form.get("passwordRepeat")
         if len(email) < 5 or len(password0) < 8:
-            error = "Either email or password length do not suffice (email has to be greater than 5 and password has to contain a minimum of 8 words)"
+            error = "Either email or password length do not suffice </br> (email has to contain than 5 and password has to contain a minimum of 8 letters)"
             print(error)
         print("hurz")
         if not password0 == password1:
