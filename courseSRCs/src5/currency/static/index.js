@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // Add data to send with request
         const data = new FormData();
         data.append('currency', currency);
-
+        console.log(data)
         // Send request
         request.send(data);
         return false;
